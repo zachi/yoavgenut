@@ -105,18 +105,15 @@
     <Content Include="Content\themes\base\jquery.ui.tabs.css" />
     <Content Include="Content\themes\base\jquery.ui.theme.css" />
     <Content Include="Global.asax" />
-    <Content Include="images\189179_1821290939553_7478690_n.jpg" />
     <Content Include="images\189499_1821294859651_964199_n.jpg" />
     <Content Include="images\190334_1821514985154_1005958_n.jpg" />
     <Content Include="images\195986_1821518065231_8351522_n.jpg" />
-    <Content Include="images\196767_1821296059681_1467788_n.jpg" />
     <Content Include="images\196848_1853922875331_4494048_n.jpg" />
     <Content Include="images\197961_1853930675526_4633718_n.jpg" />
     <Content Include="images\200288_1821517385214_3308396_n.jpg" />
     <Content Include="images\205097_1853922995334_4914266_n.jpg" />
     <Content Include="images\207027_1853930835530_5243679_n.jpg" />
     <Content Include="images\207633_1853927715452_5074211_n.jpg" />
-    <Content Include="images\207868_1853920955283_3221942_n.jpg" />
     <Content Include="images\293644_2182175161433_1071806_n.jpg" />
     <Content Include="images\309658_2556815447206_1644508272_n.jpg" />
     <Content Include="images\375197_2556824807440_1352953493_n.jpg" />
@@ -127,7 +124,6 @@
     <Content Include="images\427786_3313937894794_120214924_n.jpg" />
     <Content Include="images\529176_3449557925210_1003187934_a.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
-    <Content Include="images\IMG_1001_resize.jpg" />
     <Content Include="images\IMG_1386_resize.jpg" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
