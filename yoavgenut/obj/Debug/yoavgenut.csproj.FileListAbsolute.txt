@@ -1,0 +1,7 @@
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\bin\yoavgenut.dll
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\bin\yoavgenut.pdb
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\bin\EntityFramework.dll
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\bin\EntityFramework.xml
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\obj\Debug\ResolveAssemblyReference.cache
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\obj\Debug\yoavgenut.dll
+c:\users\tzachi\documents\visual studio 2010\Projects\yoavgenut\yoavgenut\obj\Debug\yoavgenut.pdb

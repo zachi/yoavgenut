@@ -1,0 +1,17 @@
+.img-box{float:left}
+.small-box{width:240px;height:240px}
+.wide-box{width:480px;height:240px}
+.high-box{width:240px;height:480px}
+.montage{width:85%;float:left}
+.menu{width:15%;float:right;position:relative}
+.menu-button{font-size:28px;width:100px;display:block;line-height:101px;position:fixed;right:9%;background-color:black;text-align:center;color:white;-webkit-transition-duration:.4s;-webkit-transition-property:-webkit-transform}
+.menu-button:hover{-webkit-transform:rotate(-1000deg)}
+#video-button{top:300px;background:url('../../images/record.jpg')}
+#myself-button{top:500px;background:url('../../images/star-gold.png')}
+#contact-button{top:700px;background:url('../../images/star-red.png')}
+.horizontal-strip{overflow:hidden;width:0;height:0;position:absolute;right:700px;top:500px;-webkit-transition:width 2s,height 2s,right 2s,top 2s,-webkit-transform 2s;opacity:.85;text-align:center;color:grey}
+.horizontal-strip-open{display:block;width:60%;height:500px;right:300px;top:260px}
+.horizontal-strip-content{width:100%;height:400px;float:left;background-color:black}
+.horizontal-strip-content p{margin:40px 32% 40px 40px;font-size:25px}
+body{position:relative;direction:rtl;margin:0}
+#close-button{background-color:black;display:block;width:100px;float:left;font-size:25px;text-align:center}

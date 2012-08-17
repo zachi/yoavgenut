@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Yoav Genut";
+}
+
+@*<h2>@ViewBag.Message</h2>*@
+
+<div class="montage">
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+    <div class="img-box high-box">
+      <img src="../../images/high.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small-yoavdj.jpg" />
+    </div>
+    <div class="img-box high-box">
+      <img src="../../images/high.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small-yoavdj.jpg" />
+    </div>
+    <div class="img-box wide-box">
+      <img src="../../images/wide.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small-yoavdj.jpg" />
+    </div>
+    <div class="img-box high-box">
+      <img src="../../images/high.jpg" />
+    </div>
+    <div class="img-box wide-box">
+      <img src="../../images/wide.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+        <div class="img-box wide-box">
+      <img src="../../images/wide.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small-yoavdj.jpg" />
+    </div>
+    <div class="img-box high-box">
+      <img src="../../images/high.jpg" />
+    </div>
+    <div class="img-box wide-box">
+      <img src="../../images/wide.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+    <div class="img-box small-box">
+      <img src="../../images/small.jpg" />
+    </div>
+</div>
+<div class="menu">
+
+ <div><span id="myself-button" class="menu-button" >מי אני</span></div> 
+ <div><span id="video-button" class="menu-button" >ווידאו</span></div> 
+ <div><span id="contact-button" class="menu-button" >צור קשר</span></div> 
+</div>
+<div class="horizontal-strip">
+  <span id="close-button">x סגור</span>
+  <div id="myself-content" class="horizontal-strip-content"><p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי. 
+
+גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p></div>
+  <div id="video-content" class="horizontal-strip-content">
+    <iframe src="http://player.vimeo.com/video/43038579" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+   </div>
+</div>
+<script>
+  $(function () {
+
+    //var $container = $('#container');
+
+    $('.montage').masonry({
+      itemSelector: '.img-box'//,
+      //columnWidth: 240
+    });
+    $('.menu-button').click(function () {
+      var name = $(this).attr('id').replace('button', '');
+      $('.horizontal-strip-content').hide();
+      $('#' + name + 'content').show();
+      $('.horizontal-strip').addClass('horizontal-strip-open');
+    })
+    $('#close-button').click(function () {
+      $('.horizontal-strip').removeClass('horizontal-strip-open');
+    })
+
+  });
+</script>
