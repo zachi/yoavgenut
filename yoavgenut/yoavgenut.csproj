@@ -127,12 +127,15 @@
     <Content Include="images\record.png" />
     <Content Include="images\small-yoavdj.jpg" />
     <Content Include="images\small.jpg" />
+    <Content Include="images\small2.jpg" />
+    <Content Include="images\small3.jpg" />
     <Content Include="images\star-gold.png" />
     <Content Include="images\star-green.png" />
     <Content Include="images\star-purple - Copy.png" />
     <Content Include="images\star-purple.png" />
     <Content Include="images\star-red.png" />
     <Content Include="images\wide.jpg" />
+    <Content Include="images\wide2.jpg" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
