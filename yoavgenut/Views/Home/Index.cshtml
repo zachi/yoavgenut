@@ -6,16 +6,16 @@
 
 <div class="montage">
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small3.jpg" />
     </div>
     <div class="img-box high-box">
       <img src="../../images/high.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
     <div class="img-box small-box">
       <img src="../../images/small-yoavdj.jpg" />
@@ -27,7 +27,7 @@
       <img src="../../images/small-yoavdj.jpg" />
     </div>
     <div class="img-box wide-box">
-      <img src="../../images/wide.jpg" />
+      <img src="../../images/wide2.jpg" />
     </div>
     <div class="img-box small-box">
       <img src="../../images/small-yoavdj.jpg" />
@@ -39,10 +39,10 @@
       <img src="../../images/wide.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
         <div class="img-box wide-box">
       <img src="../../images/wide.jpg" />
@@ -57,44 +57,70 @@
       <img src="../../images/wide.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
     <div class="img-box small-box">
-      <img src="../../images/small.jpg" />
+      <img src="../../images/small2.jpg" />
     </div>
 </div>
-<div class="menu">
 
- <div><span id="myself-button" class="menu-button" >מי אני</span></div> 
- <div><span id="video-button" class="menu-button" >ווידאו</span></div> 
- <div><span id="contact-button" class="menu-button" >צור קשר</span></div> 
+<div class="menu">
+ <div class="menu-button" id="video-button">
+     <span class="button-text">ווידאו</span>
+    <span class="button-record"></span>
+ </div> 
+ <div class="menu-button" id="myself-button">
+    <span class="button-text">מי אני</span>
+    <span class="button-record"></span>
+  </div> 
+ <div class="menu-button" id="contact-button">
+     <span class="button-text">מי אני</span>
+    <span class="button-record"></span>
+    </div> 
 </div>
-<div class="horizontal-strip">
+<div class="category-content">
   <span id="close-button">x סגור</span>
-  <div id="myself-content" class="horizontal-strip-content"><p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי. 
+  <div id="myself-content" class="category-content-content"><p>לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי. 
 
 גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ, ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה - לתכי מורגם בורק? לתיג ישבעס.</p></div>
-  <div id="video-content" class="horizontal-strip-content">
+  <div id="video-content" class="category-content-content">
     <iframe src="http://player.vimeo.com/video/43038579" width="400" height="300" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
    </div>
 </div>
+
 <script>
   $(function () {
 
     //var $container = $('#container');
 
     $('.montage').masonry({
-      itemSelector: '.img-box'//,
+      itemSelector: '.img-box',
+      isAnimated: true
       //columnWidth: 240
     });
     $('.menu-button').click(function () {
       var name = $(this).attr('id').replace('button', '');
-      $('.horizontal-strip-content').hide();
+      $('.category-content-content').hide();
       $('#' + name + 'content').show();
-      $('.horizontal-strip').addClass('horizontal-strip-open');
+      $('.category-content').addClass('category-content-open');
+      $('.montage').addClass('montage-minified');
+      $('.menu').addClass('menu-expanded');
+      $('.montage').masonry('reload');
+      //      $('.montage').masonry({
+      //        itemSelector: '.img-box'//,
+      //      });
+      //      $('.montage').masonry({
+      //        itemSelector: '.img-box'//,
+      //      });
     })
     $('#close-button').click(function () {
-      $('.horizontal-strip').removeClass('horizontal-strip-open');
+      $('.category-content').removeClass('category-content-open');
+      $('.menu').removeClass('menu-expanded');
+      $('.montage').removeClass('montage-minified');
+      $('.montage').masonry('reload');
+       //      $('.montage').masonry({
+      //        itemSelector: '.img-box'
+      //      });
     })
 
   });
