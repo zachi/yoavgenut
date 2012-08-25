@@ -29,13 +29,12 @@
 .menu-button {
   font-size: 28px;
   width: 220px;
-  height: 190px;
+  height: 20%;
   position: absolute;
   right: 20%;
   text-align: center;
   color: white;
   border-radius: 10px;
-  margin-bottom: 50px;
   background-color: #FF4500;
   opacity: 0.7;
   cursor: pointer;
@@ -66,19 +65,19 @@
   color: #242424;
 }
 #video-button {
-  top: 70px;
+  top: 10%;
 }
 #video-button .button-record {
   background: url('../../images/record.png');
 }
 #myself-button {
-  top: 320px;
+  top: 40%;
 }
 #myself-button .button-record {
   background: url('../../images/record.png');
 }
 #contact-button {
-  top: 570px;
+  top: 70%;
 }
 #contact-button .button-record {
   background: url('../../images/record.png');
