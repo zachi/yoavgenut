@@ -121,8 +121,12 @@
     <Content Include="images\418026_3296429937106_525152813_n.jpg" />
     <Content Include="images\427786_3313937894794_120214924_n.jpg" />
     <Content Include="images\529176_3449557925210_1003187934_a.jpg" />
+    <Content Include="images\helpink-outtake3.gif" />
     <Content Include="images\high.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
+    <Content Include="images\LOGO.png" />
+    <Content Include="images\patiphone.gif" />
+    <Content Include="images\patiphone.png" />
     <Content Include="images\record.jpg" />
     <Content Include="images\record.png" />
     <Content Include="images\small-yoavdj.jpg" />
@@ -136,6 +140,7 @@
     <Content Include="images\star-red.png" />
     <Content Include="images\wide.jpg" />
     <Content Include="images\wide2.jpg" />
+    <Content Include="images\worstxmas-type.gif" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />

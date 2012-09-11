@@ -30,8 +30,13 @@
 	float:left;
 	//-webkit-transition: width 2s, -webkit-transform 2s;
 }
+
 .montage-minified {
 	width:31%!important;
+	#close-button {
+		display:block;
+	}
+
 }
 
 .menu {
@@ -41,13 +46,16 @@
 	//margin-top:260px;
 	//text-align:center;
 	position:relative;
+	//font-family: 'Capriola', sans-serif;  
+	font-family: 'Yellowtail', cursive;
 }
 
 .menu-button {
-	font-size:28px;
+	font-size:56px;
 	width:220px;
 	//height: 190px;
-	height:22%;
+	//height:30%;
+	height:150px;
 	position:absolute;
 	right:20%;
 	text-align:center;
@@ -55,8 +63,8 @@
 	//border:2px solid silver;
 	border-radius:10px;
 	//margin-bottom:50px;
-	background-color:@lake-michigan;
-	opacity:0.7;
+	background-color:#E1EBBD  ;
+	//opacity:0.7;
 	cursor:pointer;
 
 //	border-bottom: 1px solid #E5E4E0;
@@ -81,17 +89,17 @@
 		&:hover { -webkit-transform: rotate(-1000deg); }
 	}
 	.button-text {
-		margin-top: 10px;
-		display: block;
+		
 		color:white ;
+		font-size: 27px;
+		display: block;
+		padding-top: 28px;
 	}
 	
 }
 
-
 #video-button {
-	//top:70px;
-	top:10%;
+	top:300px;
 	.button-record {
 		background:url('../../images/record.png');
 	}
@@ -100,7 +108,7 @@
 
 #myself-button {
 	//top:320px;
-	top:40%;
+	top:530px;
 	.button-record {
 	  background:url('../../images/record.png');
 	}
@@ -109,47 +117,11 @@
 
 #contact-button {
 	//top:570px;
-	top:70%;
+	top:760px;
 	.button-record {
 	  background:url('../../images/record.png');
 	}
 }
-
-//.category-content
-//{
-//	overflow:hidden;
-//	width:0;
-//	height:0;
-//	position:absolute;
-//	right:700px;
-//	top:500px;
-//	-webkit-transition: width 2s, height 2s, right 2s, top 2s, -webkit-transform 2s;
-//	opacity: .85;
-//	text-align:center;
-//	color: grey;
-//}
-//
-//.category-content-open
-//{
-//	display:block;
-//	width:60%;
-//	height:500px;
-//
-//	right:300px;
-//	top:260px;
-//}
-//
-//.category-content-content
-//{
-//	width:100%;
-//	height:400px;
-//	float:left;
-//	background-color: black;
-//	p{
-//		margin:40px 32% 40px 40px;
-//		font-size:@medium;
-//	}
-//}
 
 .category-content {
 	overflow:hidden;
@@ -185,34 +157,94 @@
 	}
 }
 
+body.alter {
+  background:-webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px)64px 64px,-webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),-webkit-linear-gradient(315deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+  background-color:#e1ebbd;
+  background-size: 128px 128px;
+}
+
 body {
 	position:relative;
 	direction:rtl;
 	margin:0px;
 	//background-image: -webkit-radial-gradient(midnightBlue 9px, transparent 10px), -webkit-repeating-radial-gradient(midnightBlue 0, midnightBlue 4px, transparent 5px, transparent 20px, midnightBlue 21px, midnightBlue 25px, transparent 26px, transparent 50px);
 	//background-size: 30px 30px, 90px 90px;
-	background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px, -webkit-linear-gradient(-117deg, #151515 5px, transparent 5px) 10px 0px, -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px, -webkit-linear-gradient(-117deg, #222 5px, transparent 5px) 10px 5px, -webkit-linear-gradient(0deg, #1B1B1B 10px, transparent 10px), -webkit-linear-gradient(#1D1D1D 25%, #1A1A1A 25%, #1A1A1A 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-	background-color: #131313;
-	background-size: 20px 20px;
+//	background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px, -webkit-linear-gradient(-117deg, #151515 5px, transparent 5px) 10px 0px, -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px, -webkit-linear-gradient(-117deg, #222 5px, transparent 5px) 10px 5px, -webkit-linear-gradient(0deg, #1B1B1B 10px, transparent 10px), -webkit-linear-gradient(#1D1D1D 25%, #1A1A1A 25%, #1A1A1A 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+//	background-color: #131313;
+//	background-size: 20px 20px;
+
+//	background: -webkit-linear-gradient(45deg, #92BAAC 45px, transparent 45px)64px 64px, -webkit-linear-gradient(45deg, #92BAAC 45px, transparent 45px,transparent 91px, #E1EBBD 91px, #E1EBBD 135px, transparent 135px), -webkit-linear-gradient(135deg, #92BAAC 23px, transparent 23px, transparent 68px,#92BAAC 68px,#92BAAC 113px,transparent 113px,transparent 158px,#92BAAC 158px);
+//	background-color: #E1EBBD;
+//	background-size: 128px 128px;
+
+
+
+
+//background:-webkit-linear-gradient(-45deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),-webkit-linear-gradient(-135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+//background-color:#708090;
+//background-size: 64px 128px; 
+//
+
+// background-color:#556;
+//background-image: -webkit-linear-gradient(60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+//-webkit-linear-gradient(-60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+//-webkit-linear-gradient(60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+//-webkit-linear-gradient(-60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+//-webkit-linear-gradient(30deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+//-webkit-linear-gradient(30deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+//background-size:80px 140px;
+//background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+
+
 }
-.page
-{
+
+.page {
 	overflow:hidden;
 }
 
 #close-button {
-	background-color: black;
-  display: block;
-  width: 100px;
-  float: left;
-  font-size:@medium;
-  text-align:center;
-  border-radius:5px;
-  cursor:pointer;
+background-color: #E1EBBD;
+display: block;
+width: 100px;
+position: absolute;
+top: 0;
+right: -89px;
+font-size: 54px;
+text-align: center;
+cursor: pointer;
+height: 60px;
+font-weight: bold;
+color: white;
+  
+display:none;
 }
-img {
-	padding:2px;
-	background-color:grey;
+
+
+.montage img {
+	padding:12px;
+	background-color:#E1EBBD ;
+}
+
+#logo {
+
+  font-family: 'Yellowtail', cursive;
+  right: 20%;
+  width:410px;
+  margin:20px auto;
+	//opacity: 0.7;
+  img {
+    background-color: transparent!important;
+    width:410px;
+		margin: 0;
+		padding: 0;
+  }
+	.logo-text {
+		margin: auto;
+    width: 247px;
+    display: block;
+    font-size: 57px;
+    padding-right: 10px;
+	}
 }
 
 @medium:25px;
