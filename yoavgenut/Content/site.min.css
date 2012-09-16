@@ -12,9 +12,9 @@
 .menu-button .button-text{color:white;font-size:27px;display:block;padding-top:28px}
 #video-button{top:300px}
 #video-button .button-record{background:url('../../images/record.png')}
-#myself-button{top:530px}
+#myself-button{top:480px}
 #myself-button .button-record{background:url('../../images/record.png')}
-#contact-button{top:760px}
+#contact-button{top:660px}
 #contact-button .button-record{background:url('../../images/record.png')}
 #video-content{margin-top:30px}
 .category-content{overflow:hidden;width:0;float:right;-webkit-transition:width 1s,-webkit-transform 1s;text-align:center;color:grey;margin-top:50px}
