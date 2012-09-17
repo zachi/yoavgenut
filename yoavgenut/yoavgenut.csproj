@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlternativeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -124,6 +125,7 @@
     <Content Include="images\helpink-outtake3.gif" />
     <Content Include="images\high.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
+    <Content Include="images\LOGO rounded text.png" />
     <Content Include="images\LOGO.png" />
     <Content Include="images\patiphone.gif" />
     <Content Include="images\patiphone.png" />
@@ -192,6 +194,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\site.less" />
+    <Content Include="Views\Alternative\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
