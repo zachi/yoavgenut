@@ -35,6 +35,7 @@
   border-right: 13px solid #E1EBBD;
   border-left: 13px solid #E1EBBD;
   height: 228px;
+  background-color: white;
 }
 .menu > div:last-child {
   border-bottom: 13px solid #E1EBBD;
@@ -120,6 +121,7 @@ body {
 }
 .page {
   overflow: hidden;
+  background-color: #E1EBBD;
 }
 #close-button {
   background-color: #E1EBBD;
