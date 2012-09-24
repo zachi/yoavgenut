@@ -72,6 +72,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\alternative.css">
+      <DependentUpon>alternative.less</DependentUpon>
+    </Content>
+    <Content Include="Content\alternative.min.css">
+      <DependentUpon>alternative.less</DependentUpon>
+    </Content>
     <Content Include="Content\site.css">
       <DependentUpon>site.less</DependentUpon>
     </Content>
@@ -193,6 +199,8 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Content\alternative.less" />
+    <None Include="Content\fonts\digital-7.ttf" />
     <None Include="Content\site.less" />
     <Content Include="Views\Alternative\Index.cshtml" />
   </ItemGroup>
