@@ -68,19 +68,19 @@
   top: 300px;
 }
 #video-button .button-record {
-  background: url('../../images/record-medium.png');
+  background: url('../../images/record-medium1.png');
 }
 #myself-button {
   top: 480px;
 }
 #myself-button .button-record {
-  background: url('../../images/record-medium.png');
+  background: url('../../images/record-medium1.png');
 }
 #contact-button {
   top: 660px;
 }
 #contact-button .button-record {
-  background: url('../../images/record-medium.png');
+  background: url('../../images/record-medium1.png');
 }
 #video-content {
   margin-top: 30px;
