@@ -33,7 +33,6 @@
 .menu > div {
   border-top: 13px solid #E1EBBD;
   border-right: 13px solid #E1EBBD;
-  border-left: 13px solid #E1EBBD;
   height: 228px;
   background-color: white;
 }
@@ -150,7 +149,8 @@ body {
 #logo img {
   background-color: transparent!important;
   width: 342px;
-  margin: 0;
+  margin: auto;
+  display: block;
   padding: 0;
 }
 #logo .logo-text {

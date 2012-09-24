@@ -6,7 +6,7 @@
 .montage-minified{width:31%!important}
 .montage-minified #close-button{display:block}
 .menu{width:24%;height:100%;float:right;position:relative;font-family:'Yellowtail',cursive}
-.menu>div{border-top:13px solid #E1EBBD;border-right:13px solid #E1EBBD;border-left:13px solid #E1EBBD;height:228px;background-color:white}
+.menu>div{border-top:13px solid #E1EBBD;border-right:13px solid #E1EBBD;height:228px;background-color:white}
 .menu>div:last-child{border-bottom:13px solid #E1EBBD}
 .menu-button{font-size:56px;right:20%;text-align:center;color:white;cursor:pointer}
 .menu-button .button-record{width:175px;height:175px;display:block;-webkit-transition-duration:.4s;-webkit-transition-property:-webkit-transform;margin:auto;margin-top:25px}
@@ -29,5 +29,5 @@ body{position:relative;direction:rtl;margin:0}
 #close-button{background-color:#E1EBBD;display:block;width:100px;position:absolute;top:0;right:-89px;font-size:54px;text-align:center;cursor:pointer;height:60px;font-weight:bold;color:white;display:none}
 .montage img{padding:12px;background-color:#E1EBBD}
 #logo{font-family:'Yellowtail',cursive;right:20%;margin:0 auto}
-#logo img{background-color:transparent!important;width:342px;margin:0;padding:0}
+#logo img{background-color:transparent!important;width:342px;margin:auto;display:block;padding:0}
 #logo .logo-text{margin:auto;width:247px;display:block;font-size:57px;padding-right:10px}
