@@ -4,6 +4,7 @@
 }
 .img-box {
   float: left;
+  padding: 0px;
 }
 .small-box {
   width: 240px;
@@ -31,20 +32,34 @@
   width: 24%;
   height: 100%;
   float: right;
-  position: relative;
+  position: fixed;
   font-family: 'Yellowtail', cursive;
 }
 .menu-button {
   font-size: 56px;
-  width: 220px;
-  height: 150px;
-  position: absolute;
-  right: 20%;
+  width: 211px;
+  height: 125px;
+  margin: auto;
   text-align: center;
   color: white;
+  margin-bottom: 20px;
+  padding-top: 25px;
   border-radius: 10px;
   background-color: #E1EBBD  ;
   cursor: pointer;
+  position: relative;
+  border-bottom: 7px solid #7E7979;
+  border-right: 5px solid #7E7979;
+}
+.menu-button .record-niddle {
+  background-image: url('/images/record-niddle.png');
+  width: 60px;
+  height: 109px;
+  display: block;
+  position: absolute;
+  right: 31px;
+  top: 5px;
+  z-index: 1;
 }
 .menu-button .button-record {
   width: 100px;
@@ -53,7 +68,6 @@
   -webkit-transition-duration: 0.4s;
   -webkit-transition-property: -webkit-transform;
   margin: auto;
-  margin-top: 25px;
 }
 .menu-button .button-record:hover {
   -webkit-transform: rotate(-1000deg);
@@ -64,20 +78,11 @@
   display: block;
   padding-top: 28px;
 }
-#video-button {
-  top: 300px;
-}
 #video-button .button-record {
   background: url('../../images/record.png');
 }
-#myself-button {
-  top: 480px;
-}
 #myself-button .button-record {
   background: url('../../images/record.png');
-}
-#contact-button {
-  top: 660px;
 }
 #contact-button .button-record {
   background: url('../../images/record.png');
@@ -88,7 +93,8 @@
 .category-content {
   overflow: hidden;
   width: 0;
-  float: right;
+  position: fixed;
+  right: 24%;
   -webkit-transition: width 1s, -webkit-transform 1s;
   text-align: center;
   color: grey;
@@ -120,14 +126,15 @@ body {
 }
 .page {
   overflow: hidden;
+  position: relative;
 }
 #close-button {
   background-color: #E1EBBD;
   display: block;
   width: 100px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: -89px;
+  left: 470px;
   font-size: 54px;
   text-align: center;
   cursor: pointer;
@@ -142,21 +149,50 @@ body {
 }
 #logo {
   font-family: 'Yellowtail', cursive;
-  right: 20%;
-  width: 410px;
-  margin: 20px auto;
+  width: 220px;
+  margin: 20px auto 40px;
 }
 #logo img {
   background-color: transparent!important;
-  width: 410px;
-  margin: 0;
+  background-image: url('/images/logo.large.2.png');
+  width: 190px;
+  height: 141px;
+  margin: auto;
   padding: 0;
+  display: block;
 }
 #logo .logo-text {
   margin: auto;
-  width: 247px;
   display: block;
-  font-size: 57px;
+  font-size: 53px;
   padding-right: 10px;
   line-height: 44px;
+}
+@media screen and (max-width: 1024px) {
+  #logo {
+    width: 142px;
+    margin: 20px auto;
+  }
+  #logo img {
+    background-color: transparent!important;
+    background-image: url('/images/logo.small.png');
+    width: 142px;
+    height: 105px;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  #logo .logo-text {
+    margin: auto;
+    display: block;
+    font-size: 35px;
+    padding-right: 10px;
+    line-height: 44px;
+  }
+  #close-button {
+    left: 230px;
+  }
+  .category-content-open {
+    margin-top: 170px;
+  }
 }

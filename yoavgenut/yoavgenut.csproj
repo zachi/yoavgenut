@@ -65,6 +65,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AlternativeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -117,6 +118,7 @@
     <Content Include="images\195986_1821518065231_8351522_n.jpg" />
     <Content Include="images\196848_1853922875331_4494048_n.jpg" />
     <Content Include="images\197961_1853930675526_4633718_n.jpg" />
+    <Content Include="images\1x1-pixel.png" />
     <Content Include="images\200288_1821517385214_3308396_n.jpg" />
     <Content Include="images\205097_1853922995334_4914266_n.jpg" />
     <Content Include="images\207027_1853930835530_5243679_n.jpg" />
@@ -132,11 +134,14 @@
     <Content Include="images\high.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
     <Content Include="images\LOGO rounded text.png" />
+    <Content Include="images\LOGO.large.2.png" />
     <Content Include="images\LOGO.png" />
+    <Content Include="images\LOGO.small.png" />
     <Content Include="images\patiphone.gif" />
     <Content Include="images\patiphone.png" />
     <Content Include="images\record-big.png" />
     <Content Include="images\record-medium1.png" />
+    <Content Include="images\record-niddle.png" />
     <Content Include="images\record.jpg" />
     <Content Include="images\record.png" />
     <Content Include="images\small-yoavdj.jpg" />
