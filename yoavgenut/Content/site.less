@@ -10,10 +10,7 @@ font-family: digital7;
 src: url('/content/fonts/digital-7.ttf');
 }
 
-
 .img-box {
-  //width: 500px;
-  //margin: 10px;
   float: left;
 	padding:0px;
 }
@@ -36,7 +33,6 @@ src: url('/content/fonts/digital-7.ttf');
 .montage {
 	width:76%;
 	float:left;
-	//-webkit-transition: width 2s, -webkit-transform 2s;
 }
 
 .montage-minified {
@@ -52,29 +48,29 @@ src: url('/content/fonts/digital-7.ttf');
 	height:100%;
 	float:right;
 	position:fixed;
+	right:0;
 	//font-family: 'Capriola', sans-serif;  
 	font-family: 'Yellowtail', cursive;
 	z-index:1;
 	background-color:white;
 }
 
-.menu-buttons
-{
+.menu-buttons {
 	width:211px;
 	margin:auto;
 }
+
 .menu-button {
+
 	font-size:56px;
 
 	width:211px;
 	height:125px;
-	
 	text-align:center;
 	color:white;
 	margin-bottom: 20px;
 	padding-top: 25px;
 	border-radius:10px;
-	
 	background-color:#E1EBBD  ;
 	cursor:pointer;
 	position:relative;
@@ -92,17 +88,19 @@ src: url('/content/fonts/digital-7.ttf');
     top: 5px;
 		z-index:1;
   }
+
 	.button-record {
 		background:url('../../images/record.png');
 		width:100px;
 		height:100px;
 		display:block;
-		-webkit-transition-duration: 0.4s;
-		-webkit-transition-property: -webkit-transform;
 		margin:auto;
-		
-		&:hover { -webkit-transform: rotate(-1000deg); }
+		.record-transform-first;
+		&:hover { 
+		  .record-transform-second;
+		}
 	}
+	
 	.button-text {
 		
 		color:white ;
@@ -113,15 +111,13 @@ src: url('/content/fonts/digital-7.ttf');
 	
 }
 
-.menu-button:active
-{
+.menu-button:active {
 	margin-top:26px;
 	border-bottom: 1px solid #7E7979;
 	border-right: 1px solid #7E7979;
 }
 
-.menu-button:active:first-child
-{
+.menu-button:active:first-child {
 	margin-top:46px;
 }
 
@@ -129,16 +125,12 @@ src: url('/content/fonts/digital-7.ttf');
 	overflow:hidden;
 	position:fixed;
 	width:45%;
-	-webkit-transition: right 0.8s, -webkit-transform 1s;
-	//opacity: .85;
+	.horizontal-transition;
 	text-align:center;
 	color: grey;
-	margin-top:50px;
-	
-	
-		margin-top:250px;
-		height:500px;
-		right:-24%;
+  margin-top:250px;
+  height:500px;
+  right:-24%;
 }
 
 .category-content-open {
@@ -163,45 +155,10 @@ src: url('/content/fonts/digital-7.ttf');
 	}
 }
 
-body.alter {
-  background:-webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px)64px 64px,-webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),-webkit-linear-gradient(315deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
-  background-color:#e1ebbd;
-  background-size: 128px 128px;
-}
-
 body {
 	position:relative;
 	direction:rtl;
 	margin:0px;
-	//background-image: -webkit-radial-gradient(midnightBlue 9px, transparent 10px), -webkit-repeating-radial-gradient(midnightBlue 0, midnightBlue 4px, transparent 5px, transparent 20px, midnightBlue 21px, midnightBlue 25px, transparent 26px, transparent 50px);
-	//background-size: 30px 30px, 90px 90px;
-//	background: -webkit-linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px, -webkit-linear-gradient(-117deg, #151515 5px, transparent 5px) 10px 0px, -webkit-linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px, -webkit-linear-gradient(-117deg, #222 5px, transparent 5px) 10px 5px, -webkit-linear-gradient(0deg, #1B1B1B 10px, transparent 10px), -webkit-linear-gradient(#1D1D1D 25%, #1A1A1A 25%, #1A1A1A 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-//	background-color: #131313;
-//	background-size: 20px 20px;
-
-//	background: -webkit-linear-gradient(45deg, #92BAAC 45px, transparent 45px)64px 64px, -webkit-linear-gradient(45deg, #92BAAC 45px, transparent 45px,transparent 91px, #E1EBBD 91px, #E1EBBD 135px, transparent 135px), -webkit-linear-gradient(135deg, #92BAAC 23px, transparent 23px, transparent 68px,#92BAAC 68px,#92BAAC 113px,transparent 113px,transparent 158px,#92BAAC 158px);
-//	background-color: #E1EBBD;
-//	background-size: 128px 128px;
-
-
-
-
-//background:-webkit-linear-gradient(-45deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),-webkit-linear-gradient(-135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-//background-color:#708090;
-//background-size: 64px 128px; 
-//
-
-// background-color:#556;
-//background-image: -webkit-linear-gradient(60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-//-webkit-linear-gradient(-60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-//-webkit-linear-gradient(60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-//-webkit-linear-gradient(-60deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
-//-webkit-linear-gradient(30deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
-//-webkit-linear-gradient(30deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-//background-size:80px 140px;
-//background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
-
-
 }
 
 .page {
@@ -222,10 +179,8 @@ body {
   height: 60px;
   font-weight: bold;
   color: white;
-  
   display:none;
 }
-
 
 .montage img {
 	padding:12px;
@@ -255,6 +210,32 @@ body {
 		line-height:44px;
 	}
 }
+
+.horizontal-transition () {
+	-webkit-transition: right 0.8s, -webkit-transform 1s;
+	-moz-transition: right 0.8s, -moz-transform 1s;
+	-o-transition: right 0.8s, -o-transform 1s;
+	transition: right 0.8s, transform 1s;
+}
+
+.record-transform-first() {
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-duration: 0.4s;
+  -moz-transition-property: -moz-transform;
+  -o-transition-duration: 0.4s;
+  -o-transition-property: -o-transform;
+  transition-duration: 0.4s;
+  transition-property: transform;
+	}
+
+.record-transform-second() {
+  -webkit-transform: rotate(-1000deg); 
+  -moz-transform: rotate(-1000deg); 
+  -o-transform: rotate(-1000deg); 
+  transform: rotate(-1000deg); 
+}
+
 
 @media screen and (max-width: 1024px) {
 	#logo {

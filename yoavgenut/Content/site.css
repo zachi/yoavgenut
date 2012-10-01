@@ -33,6 +33,7 @@
   height: 100%;
   float: right;
   position: fixed;
+  right: 0;
   font-family: 'Yellowtail', cursive;
   z-index: 1;
   background-color: white;
@@ -71,12 +72,21 @@
   width: 100px;
   height: 100px;
   display: block;
+  margin: auto;
   -webkit-transition-duration: 0.4s;
   -webkit-transition-property: -webkit-transform;
-  margin: auto;
+  -moz-transition-duration: 0.4s;
+  -moz-transition-property: -moz-transform;
+  -o-transition-duration: 0.4s;
+  -o-transition-property: -o-transform;
+  transition-duration: 0.4s;
+  transition-property: transform;
 }
 .menu-button .button-record:hover {
   -webkit-transform: rotate(-1000deg);
+  -moz-transform: rotate(-1000deg);
+  -o-transform: rotate(-1000deg);
+  transform: rotate(-1000deg);
 }
 .menu-button .button-text {
   color: white ;
@@ -97,9 +107,11 @@
   position: fixed;
   width: 45%;
   -webkit-transition: right 0.8s, -webkit-transform 1s;
+  -moz-transition: right 0.8s, -moz-transform 1s;
+  -o-transition: right 0.8s, -o-transform 1s;
+  transition: right 0.8s, transform 1s;
   text-align: center;
   color: grey;
-  margin-top: 50px;
   margin-top: 250px;
   height: 500px;
   right: -24%;
@@ -114,11 +126,6 @@
 .category-content-content p {
   margin: 40px;
   font-size: 25px;
-}
-body.alter {
-  background: -webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px) 64px 64px, -webkit-linear-gradient(-135deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px), -webkit-linear-gradient(315deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
-  background-color: #e1ebbd;
-  background-size: 128px 128px;
 }
 body {
   position: relative;

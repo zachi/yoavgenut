@@ -1,7 +1,4 @@
-﻿@{
-  ViewBag.Title = "Yoav Genut";
-}
-@*<h2>@ViewBag.Message</h2>*@
+﻿
 <div class="montage">
   <div class="img-box small-box">
     <img src="../../images/small2.jpg" />
@@ -80,9 +77,6 @@
     <span class="record-niddle"></span>
     <span class="button-record"><span class="button-text">Contact</span></span>
   </div>
-  @*   <img style="display: block;width: 200px;margin: auto;" src="../../images/patiphone.png" />
-    <img style="display: block;width: 200px;margin: auto;margin-top: 50px;" src="../../images/patiphone.png" />
-    <img style="display: block;width: 200px;margin: auto;margin-top: 50px;" src="../../images/patiphone.png" />*@
   </div>
 </div>
 <div class="category-content">
@@ -101,45 +95,4 @@
       webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </div>
-<script>
-  $(function () {
-
-    //var $container = $('#container');
-
-    $('.montage').masonry({
-      itemSelector: '.img-box',
-      isAnimated: true
-      //columnWidth: 240
-    });
-    $('.menu-button').click(function () {
-
-      //      if($('body').hasClass('alter'))
-      //        $('body').removeClass('alter');
-      //      else
-      //$('body').addClass('alter');
-
-      var name = $(this).attr('id').replace('button', '');
-      $('.category-content-content').hide();
-      $('#' + name + 'content').show();
-      $('.category-content').addClass('category-content-open');
-      $('.montage').addClass('montage-minified');
-      //$('.menu').addClass('menu-expanded');
-      $('.montage').masonry('reload');
-      //      $('.montage').masonry({
-      //        itemSelector: '.img-box'//,
-      //      });
-      //      $('.montage').masonry({
-      //        itemSelector: '.img-box'//,
-      //      });
-
-    })
-    $('#close-button').click(function () {
-      //$('body').removeClass('alter');
-      $('.category-content').removeClass('category-content-open');
-      $('.montage').removeClass('montage-minified');
-      $('.montage').masonry('reload');
-
-    })
-
-  });
-</script>
+<script src="../../Scripts/site.js" type="text/javascript" ></script> 
