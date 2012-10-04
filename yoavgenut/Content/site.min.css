@@ -8,9 +8,9 @@
 .montage-minified #close-button{display:block}
 .menu{width:24%;height:100%;float:right;position:fixed;right:0;font-family:'Yellowtail',cursive;z-index:1;background-color:white}
 .menu-buttons{width:211px;margin:auto}
-.menu-button{font-size:56px;width:211px;height:125px;text-align:center;color:white;margin-bottom:20px;padding-top:25px;border-radius:10px;background-color:#E1EBBD;cursor:pointer;position:relative;border-bottom:7px solid #7E7979;border-right:5px solid #7E7979}
+.menu-button{font-size:56px;width:211px;height:125px;text-align:center;color:white;margin-bottom:20px;padding-top:25px;border-radius:10px;background-color:#E1EBBD;cursor:pointer;position:relative;border-bottom:7px solid #7E7979;border-right:5px solid #7E7979;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .menu-button .record-niddle{background-image:url('/images/record-niddle.png');width:60px;height:109px;display:block;position:absolute;right:31px;top:5px;z-index:1}
-.menu-button .button-record{background:url('../../images/record.png');width:100px;height:100px;display:block;margin:auto;-webkit-transition-duration:.4s;-webkit-transition-property:-webkit-transform;-moz-transition-duration:.4s;-moz-transition-property:-moz-transform;-o-transition-duration:.4s;-o-transition-property:-o-transform;transition-duration:.4s;transition-property:transform}
+.menu-button .button-record{background:url('../../images/record.png');width:100px;height:100px;display:block;margin:auto;-webkit-transition-duration:.4s;-moz-transition-duration:.4s;-o-transition-duration:.4s;transition-duration:.4s}
 .menu-button .button-record:hover{-webkit-transform:rotate(-1000deg);-moz-transform:rotate(-1000deg);-o-transform:rotate(-1000deg);transform:rotate(-1000deg)}
 .menu-button .button-text{color:white;font-size:27px;display:block;padding-top:28px}
 .menu-button:active{margin-top:26px;border-bottom:1px solid #7E7979;border-right:1px solid #7E7979}

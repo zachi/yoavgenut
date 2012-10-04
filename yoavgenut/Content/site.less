@@ -61,9 +61,7 @@ src: url('/content/fonts/digital-7.ttf');
 }
 
 .menu-button {
-
 	font-size:56px;
-
 	width:211px;
 	height:125px;
 	text-align:center;
@@ -76,8 +74,14 @@ src: url('/content/fonts/digital-7.ttf');
 	position:relative;
 	border-bottom: 7px solid #7E7979;
 	border-right: 5px solid #7E7979;
-
-  .record-niddle {
+  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	.record-niddle {
     
 		background-image:url('/images/record-niddle.png');
     width:60px;
@@ -108,7 +112,7 @@ src: url('/content/fonts/digital-7.ttf');
 		display: block;
 		padding-top: 28px;
 	}
-	
+		
 }
 
 .menu-button:active {
@@ -220,13 +224,9 @@ body {
 
 .record-transform-first() {
   -webkit-transition-duration: 0.4s;
-  -webkit-transition-property: -webkit-transform;
   -moz-transition-duration: 0.4s;
-  -moz-transition-property: -moz-transform;
   -o-transition-duration: 0.4s;
-  -o-transition-property: -o-transform;
   transition-duration: 0.4s;
-  transition-property: transform;
 	}
 
 .record-transform-second() {
