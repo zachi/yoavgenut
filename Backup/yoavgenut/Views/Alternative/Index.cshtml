@@ -1,0 +1,140 @@
+﻿@{
+  ViewBag.Title = "Yoav Genut";
+}
+@*<h2>@ViewBag.Message</h2>*@
+<div class="montage">
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small3.jpg" />
+  </div>
+  <div class="img-box high-box">
+    <img src="../../images/high.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small-yoavdj.jpg" />
+  </div>
+  <div class="img-box high-box">
+    <img src="../../images/high.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small-yoavdj.jpg" />
+  </div>
+  <div class="img-box wide-box">
+    <img src="../../images/wide2.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small-yoavdj.jpg" />
+  </div>
+  <div class="img-box high-box">
+    <img src="../../images/high.jpg" />
+  </div>
+  <div class="img-box wide-box">
+    <img src="../../images/wide.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <div class="img-box wide-box">
+    <img src="../../images/wide.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small-yoavdj.jpg" />
+  </div>
+  <div class="img-box high-box">
+    <img src="../../images/high.jpg" />
+  </div>
+  <div class="img-box wide-box">
+    <img src="../../images/wide.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <div class="img-box small-box">
+    <img src="../../images/small2.jpg" />
+  </div>
+  <span id="close-button">&lt;</span>
+</div>
+<div class="menu">
+  <div id="logo">
+   <img src="../../images/logo.png" />
+   <span class="logo-text">Artishot dj</span>
+  </div>
+  <div class="menu-button" id="video-button">
+    <span class="button-record"><span class="button-text">Video</span></span>
+  </div>
+  <div class="menu-button" id="myself-button">
+    <span class="button-record"><span class="button-text">About Me</span></span>
+  </div>
+  <div class="menu-button" id="contact-button">
+    <span class="button-record"><span class="button-text">Contact</span></span>
+  </div>
+  @*   <img style="display: block;width: 200px;margin: auto;" src="../../images/patiphone.png" />
+    <img style="display: block;width: 200px;margin: auto;margin-top: 50px;" src="../../images/patiphone.png" />
+    <img style="display: block;width: 200px;margin: auto;margin-top: 50px;" src="../../images/patiphone.png" />*@
+</div>
+<div class="category-content">
+  <div id="myself-content" class="category-content-content">
+    <p>
+      לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית קולורס מונפרד אדנדום סילקוף,
+      מרגשי ומרגשח. עמחליף לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית. סת אלמנקום
+      ניסי נון ניבאה. דס איאקוליס וולופטה דיאם. וסטיבולום אט דולור, קראס אגת לקטוס וואל
+      אאוגו וסטיבולום סוליסי טידום בעליק. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה
+      סטום, לפריקך תצטריק לרטי. גולר מונפרר סוברט לורם שבצק יהול, לכנוץ בעריר גק ליץ,
+      ושבעגט ליבם סולגק. בראיט ולחת צורק מונחף, בגורמי מגמש. תרבנך וסתעד לכנו סתשם השמה
+      - לתכי מורגם בורק? לתיג ישבעס.</p>
+  </div>
+  <div id="video-content" class="category-content-content">
+    <iframe src="http://player.vimeo.com/video/43038579" width="712" height="530" frameborder="0"
+      webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  $(function () {
+
+    //var $container = $('#container');
+
+    $('.montage').masonry({
+      itemSelector: '.img-box',
+      isAnimated: true
+      //columnWidth: 240
+    });
+    $('.menu-button').click(function () {
+
+      //      if($('body').hasClass('alter'))
+      //        $('body').removeClass('alter');
+      //      else
+      //$('body').addClass('alter');
+
+      var name = $(this).attr('id').replace('button', '');
+      $('.category-content-content').hide();
+      $('#' + name + 'content').show();
+      $('.category-content').addClass('category-content-open');
+      $('.montage').addClass('montage-minified');
+      //$('.menu').addClass('menu-expanded');
+      $('.montage').masonry('reload');
+      //      $('.montage').masonry({
+      //        itemSelector: '.img-box'//,
+      //      });
+      //      $('.montage').masonry({
+      //        itemSelector: '.img-box'//,
+      //      });
+
+    })
+    $('#close-button').click(function () {
+      //$('body').removeClass('alter');
+      $('.category-content').removeClass('category-content-open');
+      $('.montage').removeClass('montage-minified');
+      $('.montage').masonry('reload');
+
+    })
+
+  });
+</script>

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -15,6 +16,15 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,11 +108,53 @@
     <Content Include="images\418026_3296429937106_525152813_n.jpg" />
     <Content Include="images\427786_3313937894794_120214924_n.jpg" />
     <Content Include="images\529176_3449557925210_1003187934_a.jpg" />
+    <Content Include="images\gallery\001.JPG" />
+    <Content Include="images\gallery\003.jpg" />
+    <Content Include="images\gallery\004.jpg" />
+    <Content Include="images\gallery\010.JPG" />
+    <Content Include="images\gallery\013.jpg" />
+    <Content Include="images\gallery\121.jpg" />
+    <Content Include="images\gallery\197961_1853930675526_4633718_n.jpg" />
+    <Content Include="images\gallery\2.jpg" />
+    <Content Include="images\gallery\258.jpg" />
+    <Content Include="images\gallery\36.JPG" />
+    <Content Include="images\gallery\392071_2556822687387_1545988976_n.jpg" />
+    <Content Include="images\gallery\418026_3296429937106_525152813_n.jpg" />
+    <Content Include="images\gallery\artyshot_2340.JPG" />
+    <Content Include="images\gallery\IMG_0185.JPG" />
+    <Content Include="images\gallery\IMG_0188.JPG" />
+    <Content Include="images\gallery\IMG_0197.JPG" />
+    <Content Include="images\gallery\IMG_0233.JPG" />
+    <Content Include="images\gallery\IMG_0235.JPG" />
+    <Content Include="images\gallery\IMG_0236.JPG" />
+    <Content Include="images\gallery\IMG_1001_resize.jpg" />
+    <Content Include="images\gallery\IMG_1490.JPG" />
+    <Content Include="images\gallery\IMG_1865.JPG" />
+    <Content Include="images\gallery\IMG_1907.JPG" />
+    <Content Include="images\gallery\IMG_2230.JPG" />
+    <Content Include="images\gallery\IMG_2291.JPG" />
+    <Content Include="images\gallery\IMG_2748.jpg" />
+    <Content Include="images\gallery\IMG_2814.JPG" />
+    <Content Include="images\gallery\IMG_2906.JPG" />
+    <Content Include="images\gallery\IMG_2996.JPG" />
+    <Content Include="images\gallery\IMG_3006.JPG" />
+    <Content Include="images\gallery\IMG_6465.JPG" />
+    <Content Include="images\gallery\IMG_6468.JPG" />
+    <Content Include="images\gallery\IMG_8866.jpg" />
+    <Content Include="images\gallery\IMG_9210.JPG" />
+    <Content Include="images\gallery\IMG_9218.JPG" />
+    <Content Include="images\gallery\IMG_9835.JPG" />
+    <Content Include="images\gallery\IMG_9851.JPG" />
+    <Content Include="images\gallery\LOGO.jpg" />
+    <Content Include="images\gallery\OD3_4557.JPG" />
+    <Content Include="images\gallery\OH3_0870.JPG" />
+    <Content Include="images\gallery\P1000944.JPG" />
     <Content Include="images\helpink-outtake3.gif" />
     <Content Include="images\high.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
     <Content Include="images\LOGO rounded text.png" />
     <Content Include="images\LOGO.large.2.png" />
+    <Content Include="images\LOGO.large.shadow.png" />
     <Content Include="images\LOGO.png" />
     <Content Include="images\LOGO.small.png" />
     <Content Include="images\patiphone.gif" />
@@ -125,11 +177,13 @@
     <Content Include="images\wide2.jpg" />
     <Content Include="images\worstxmas-type.gif" />
     <Content Include="robots.txt" />
+    <Content Include="Scripts\JavaScript1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Scripts\jquery.masonry.min.js" />
     <Content Include="Scripts\modernizr-1.7.js" />
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\site.js" />
+    <Content Include="Scripts\StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -159,8 +213,13 @@
     <None Include="Content\site.less" />
     <Content Include="Views\Alternative\Index.cshtml" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

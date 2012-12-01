@@ -1,0 +1,213 @@
+@font-face {
+  font-family: digital7;
+  src: url('/content/fonts/digital-7.ttf');
+}
+.img-box {
+  float: left;
+  padding: 0px;
+}
+.small-box {
+  width: 240px;
+  height: 240px;
+}
+.wide-box {
+  width: 480px;
+  height: 240px;
+}
+.high-box {
+  width: 240px;
+  height: 480px;
+}
+.montage {
+  width: 76%;
+  float: left;
+}
+.montage-minified {
+  width: 31%!important;
+}
+.montage-minified #close-button {
+  display: block;
+}
+.menu {
+  width: 24%;
+  height: 100%;
+  float: right;
+  position: fixed;
+  right: 0;
+  font-family: 'Yellowtail', cursive;
+  z-index: 1;
+  background-color: white;
+}
+.menu-buttons {
+  width: 211px;
+  margin: auto;
+}
+.menu-button {
+  font-size: 56px;
+  width: 211px;
+  height: 125px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  border-radius: 10px;
+  background-color: #E1EBBD  ;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 7px solid #7E7979;
+  border-right: 5px solid #7E7979;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.menu-button .record-niddle {
+  background-image: url('/images/record-niddle.png');
+  width: 60px;
+  height: 109px;
+  display: block;
+  position: absolute;
+  right: 31px;
+  top: 5px;
+  z-index: 1;
+}
+.menu-button .button-record {
+  background: url('../../images/record.png');
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.menu-button .button-record:hover {
+  -webkit-transform: rotate(-1000deg);
+  -moz-transform: rotate(-1000deg);
+  -o-transform: rotate(-1000deg);
+  transform: rotate(-1000deg);
+}
+.menu-button .button-text {
+  color: white ;
+  font-size: 27px;
+  display: block;
+  padding-top: 28px;
+}
+.menu-button:active {
+  margin-top: 26px;
+  border-bottom: 1px solid #7E7979;
+  border-right: 1px solid #7E7979;
+}
+.menu-button:active:first-child {
+  margin-top: 46px;
+}
+.category-content {
+  overflow: hidden;
+  position: fixed;
+  width: 45%;
+  -webkit-transition: right 0.8s, -webkit-transform 1s;
+  -moz-transition: right 0.8s, -moz-transform 1s;
+  -o-transition: right 0.8s, -o-transform 1s;
+  transition: right 0.8s, transform 1s;
+  text-align: center;
+  color: grey;
+  margin-top: 250px;
+  height: 500px;
+  right: -24%;
+}
+.category-content-open {
+  right: 24%;
+}
+.category-content-content {
+  width: 100%;
+  float: left;
+}
+.category-content-content p {
+  margin: 40px;
+  font-size: 25px;
+}
+body {
+  position: relative;
+  direction: rtl;
+  margin: 0px;
+}
+.page {
+  overflow: hidden;
+  position: relative;
+}
+#close-button {
+  background-color: #E1EBBD;
+  display: block;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 470px;
+  font-size: 54px;
+  text-align: center;
+  cursor: pointer;
+  height: 60px;
+  font-weight: bold;
+  color: white;
+  display: none;
+}
+.montage img {
+  padding: 6px;
+  background-color: #E1EBBD ;
+}
+#logo {
+  font-family: 'Yellowtail', cursive;
+  width: 220px;
+  margin: 20px auto 40px;
+}
+#logo img {
+  background-color: transparent!important;
+  background-image: url('/images/logo.large.shadow.png');
+  width: 190px;
+  height: 147px;
+  margin: auto;
+  padding: 0;
+  display: block;
+}
+#logo .logo-text {
+  margin: auto;
+  display: block;
+  font-size: 53px;
+  padding-right: 10px;
+  line-height: 44px;
+}
+@media screen and (max-width: 1024px) {
+  #logo {
+    width: 142px;
+    margin: 20px auto;
+  }
+  #logo img {
+    background-image: url('/images/logo.small.png');
+    width: 142px;
+    height: 105px;
+  }
+  #logo .logo-text {
+    font-size: 35px;
+    line-height: 44px;
+  }
+  #close-button {
+    left: 230px;
+  }
+  .category-content {
+    margin-top: 170px;
+  }
+  .menu-buttons {
+    width: 150px;
+  }
+  .menu-button {
+    width: 150px;
+  }
+  .menu-button .record-niddle {
+    right: 4px;
+  }
+  .menu-button:active:first-child {
+    margin-top: 26px;
+  }
+}
