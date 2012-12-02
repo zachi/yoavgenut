@@ -1,6 +1,11 @@
 ﻿
 $(function () {
-
+    
+    resize();
+    $(window).resize(function () {
+        resize();
+        $('.montage').masonry('reload');
+    });
     $('.montage').masonry({
         itemSelector: '.img-box',
         //columnWidth: function (a) {
@@ -18,12 +23,10 @@ $(function () {
     }, 1000);
 
     $('.menu-button').click(function () {
-        //var allBricks = $('#.img-box img');
-        //allBricks.css('width', allBricks[0].clientWidth.toString());
+        
         
         var name = $(this).attr('id').replace('button', '');
         $('.category-content-content').hide();
-        console.log('#' + name + 'content');
         $('#' + name + 'content').show();
         $('.category-content').addClass('category-content-open');
         $('.montage').addClass('montage-minified');
@@ -39,3 +42,16 @@ $(function () {
     });
 
 });
+
+function resize() {
+    var columnWidth = ($(window).width() * 0.82) / 3;
+    columnWidth = parseInt(columnWidth.toString());
+    if (columnWidth > 500)
+        columnWidth = 500;
+    var allBricks = $('.img-box img');
+    for (var i = 0; i < allBricks.length; i++) {
+        allBricks.eq(i).css('width', columnWidth.toString());
+    }
+    $('#close-button').css('left', columnWidth);
+   
+}

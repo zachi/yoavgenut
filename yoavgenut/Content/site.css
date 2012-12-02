@@ -1,5 +1,6 @@
  .img-box.masonry-brick {
-  width: 500px;
+  /*width: 500px;*/
+
 }
 .img-box img {
   width: 100.4%;
@@ -18,8 +19,6 @@
   height: 480px;
 }
 .montage {
-  /*width: 31%;*/
-
   float: left;
 }
 .montage-minified {
@@ -201,9 +200,6 @@ body {
   line-height: 44px;
 }
 @media screen and (max-width: 1024px) {
-  .img-box.masonry-brick {
-    width: 350px;
-  }
   #logo {
     width: 142px;
     margin: 20px auto;
@@ -216,9 +212,6 @@ body {
   #logo .logo-text {
     font-size: 35px;
     line-height: 44px;
-  }
-  #close-button {
-    left: 350px;
   }
   .category-content {
     margin-top: 170px;
