@@ -149,6 +149,7 @@
     <Content Include="images\gallery\OD3_4557.JPG" />
     <Content Include="images\gallery\OH3_0870.JPG" />
     <Content Include="images\gallery\P1000944.JPG" />
+    <Content Include="images\gallery\strawbery.jpg" />
     <Content Include="images\helpink-outtake3.gif" />
     <Content Include="images\high.jpg" />
     <Content Include="images\IMG_0214_resize.jpg" />
@@ -213,6 +214,8 @@
   <ItemGroup>
     <None Include="Content\site.less" />
     <Content Include="Views\Alternative\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\hostcenter.pubxml" />
+    <Content Include="בא לכם מסיבה שיקית מעודכנת בלי ל התחנף לדודים ולדודות.docx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

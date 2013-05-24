@@ -1,0 +1,6 @@
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\bin\yoavgenut.dll
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\bin\yoavgenut.pdb
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\bin\EntityFramework.dll
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\bin\EntityFramework.xml
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\obj\Release\yoavgenut.dll
+C:\Users\Tzachi\Documents\Visual Studio 2010\Projects\yoavgenut\yoavgenut\obj\Release\yoavgenut.pdb
