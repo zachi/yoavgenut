@@ -43,6 +43,7 @@ $(function () {
     });
   }
   function initMasonry() {
+
     setTimeout(function () {
       $('.montage').masonry({
         itemSelector: '.img-box',
@@ -56,7 +57,7 @@ $(function () {
         isAnimated: true,
         isResizable: true
       });
-    }, 100);
+    }, 200);
   }
   function setWindowResizeHandler() {
     $(window).resize(function () {

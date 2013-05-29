@@ -144,6 +144,10 @@
   background-color: grey;
   color: white;
 }
+.category-content #contact-content a {
+  color: gray;
+  text-decoration: none;
+}
 .category-content-open {
   right: 24%;
 }
